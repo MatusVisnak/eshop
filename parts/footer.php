@@ -3,10 +3,10 @@
             <div class="row gx-5">
                 <div class="col-lg-4 col-md-6 mb-lg-n5">
                     <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary border-inner p-4">
-                        <a href="index.html" class="navbar-brand">
+                        <a href="index.php" class="navbar-brand">
                             <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-dark me-3"></i>Cukráreň MAVI</h1>
                         </a>
-                        <p class="mt-3">Lorem diam sit erat dolor elitr et, diam lorem justo labore amet clita labore stet eos magna sit.</p>
+                        <p class="mt-3">Vitajte na našej stránke. Veríme, že si každý nájde maškrtu podľa chuti!</p>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-6">

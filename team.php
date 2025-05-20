@@ -55,12 +55,12 @@
     <!-- Page Header End -->
 
 
-    <!-- Team Start -->
+<!-- Team Start -->
     <div class="container-fluid py-5">
         <div class="container">
             <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
-                <h2 class="text-primary font-secondary">Team Members</h2>
-                <h1 class="display-4 text-uppercase">Our Master Chefs</h1>
+                <h2 class="text-primary font-secondary">Členovia Tímu</h2>
+                <h1 class="display-4 text-uppercase">Naši kuchári</h1>
             </div>
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
@@ -76,8 +76,8 @@
                             </div>
                         </div>
                         <div class="bg-dark border-inner text-center p-4">
-                            <h4 class="text-uppercase text-primary">Full Name</h4>
-                            <p class="text-white m-0">Designation</p>
+                            <h4 class="text-uppercase text-primary">Adam Ďurík</h4>
+                            <p class="text-white m-0">Hlavný pekár</p>
                         </div>
                     </div>
                 </div>
@@ -94,8 +94,8 @@
                             </div>
                         </div>
                         <div class="bg-dark border-inner text-center p-4">
-                            <h4 class="text-uppercase text-primary">Full Name</h4>
-                            <p class="text-white m-0">Designation</p>
+                            <h4 class="text-uppercase text-primary">Peter Hlava</h4>
+                            <p class="text-white m-0">Odborník na zdobenie</p>
                         </div>
                     </div>
                 </div>
@@ -112,8 +112,8 @@
                             </div>
                         </div>
                         <div class="bg-dark border-inner text-center p-4">
-                            <h4 class="text-uppercase text-primary">Full Name</h4>
-                            <p class="text-white m-0">Designation</p>
+                            <h4 class="text-uppercase text-primary">Andrea Malá</h4>
+                            <p class="text-white m-0">Pomocná pekárka</p>
                         </div>
                     </div>
                 </div>

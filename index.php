@@ -45,17 +45,10 @@
         <div class="container py-5">
             <div class="row justify-content-start">
                 <div class="col-lg-8 text-center text-lg-start">
-                    <h1 class="font-secondary text-primary mb-4">Super Crispy</h1>
-                    <h1 class="display-1 text-uppercase text-white mb-4">CakeZone</h1>
-                    <h1 class="text-uppercase text-white">The Best Cake In London</h1>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="" class="btn btn-primary border-inner py-3 px-5 me-5">Read More</a>
-                        <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                            <span></span>
-                        </button>
-                        <h5 class="font-weight-normal text-white m-0 ms-4 d-none d-sm-block">Play Video</h5>
-                    </div>
+                    <h1 class="font-secondary text-primary mb-4">Cukráreň</h1>
+                    <h1 class="display-1 text-uppercase text-white mb-4">MAVI</h1>
+                    <h1 class="text-uppercase text-white">Najlepšie torty v meste</h1>
+                    
                 </div>
             </div>
         </div>
@@ -63,33 +56,15 @@
     <!-- Hero End -->
 
 
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                            allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
+   
 
 
     <!-- About Start -->
     <div class="container-fluid pt-5">
         <div class="container">
             <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
-                <h2 class="text-primary font-secondary">About Us</h2>
-                <h1 class="display-4 text-uppercase">Welcome To CakeZone</h1>
+                <h2 class="text-primary font-secondary">O nás</h2>
+                <h1 class="display-4 text-uppercase">Vitajte v MAVI</h1>
             </div>
             <div class="row gx-5">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
@@ -98,22 +73,22 @@
                     </div>
                 </div>
                 <div class="col-lg-6 pb-5">
-                    <h4 class="mb-4">Tempor erat elitr rebum clita. Diam dolor diam ipsum erat lorem sed stet labore lorem sit clita duo</h4>
-                    <p class="mb-5">Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et tempor sit. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet magna</p>
+                    <h4 class="mb-4">V našej cukrárni pečieme srdcom – každý kúsok je poctivo pripravený s láskou a tradíciou</h4>
+                    <p class="mb-5">Naše zákusky a torty sú výsledkom dlhoročného remesla, kvalitných surovín a vášne pre sladké umenie. Každý dezert prechádza rukami skúsených cukrárov, ktorí dbajú na chuť, vzhľad aj vôňu. U nás nájdete chuť domova v každom súste.</p>
                     <div class="row g-5">
                         <div class="col-sm-6">
                             <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4" style="width: 90px; height: 90px;">
                                 <i class="fa fa-heartbeat fa-2x text-white"></i>
                             </div>
                             <h4 class="text-uppercase">100% Healthy</h4>
-                            <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+                            <p class="mb-0">Naše torty a zákusky sú tvorené len z tých najlepších a najkvalitnejších surovín zo Slovenska</p>
                         </div>
                         <div class="col-sm-6">
                             <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4" style="width: 90px; height: 90px;">
                                 <i class="fa fa-award fa-2x text-white"></i>
                             </div>
                             <h4 class="text-uppercase">Award Winning</h4>
-                            <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+                            <p class="mb-0">Počas posledných rokov zažila naša cukráreň mnoho úspechov a vyhrali sme nejednu cenu</p>
                         </div>
                     </div>
                 </div>
@@ -133,8 +108,8 @@
                             <i class="fa fa-star text-white"></i>
                         </div>
                         <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Our Experience</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                            <h6 class="text-primary text-uppercase">Skúsenosti</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">1672</h1>
                         </div>
                     </div>
                 </div>
@@ -144,8 +119,8 @@
                             <i class="fa fa-users text-white"></i>
                         </div>
                         <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Cake Specialist</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                            <h6 class="text-primary text-uppercase">Pekári</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12</h1>
                         </div>
                     </div>
                 </div>
@@ -155,8 +130,8 @@
                             <i class="fa fa-check text-white"></i>
                         </div>
                         <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Complete Project</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                            <h6 class="text-primary text-uppercase">Hotové projekty</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">1021</h1>
                         </div>
                     </div>
                 </div>
@@ -166,8 +141,8 @@
                             <i class="fa fa-mug-hot text-white"></i>
                         </div>
                         <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Happy Clients</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                            <h6 class="text-primary text-uppercase">Šťastný klienti</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">978</h1>
                         </div>
                     </div>
                 </div>
@@ -181,19 +156,19 @@
     <div class="container-fluid about py-5">
         <div class="container">
             <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
-                <h2 class="text-primary font-secondary">Menu & Pricing</h2>
-                <h1 class="display-4 text-uppercase">Explore Our Cakes</h1>
+                <h2 class="text-primary font-secondary">Menu a cenník</h2>
+                <h1 class="display-4 text-uppercase">Objavte naše torty</h1>
             </div>
             <div class="tab-class text-center">
                 <ul class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-5">
                     <li class="nav-item">
-                        <a class="nav-link text-white active" data-bs-toggle="pill" href="#tab-1">Birthday</a>
+                        <a class="nav-link text-white active" data-bs-toggle="pill" href="#tab-1">Narodeninové</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-2">Wedding</a>
+                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-2">Svadobné</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-3">Custom</a>
+                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-3">Na zakázku</a>
                     </li>
                 </ul>
                 <div class="tab-content">
@@ -203,11 +178,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$39.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Narodeninová torta</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -215,11 +190,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$49.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Narodeninová torta</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -227,11 +202,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$59.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Narodeninová torta</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -239,11 +214,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$69.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Narodeninová torta</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -251,11 +226,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$79.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Narodeninová torta</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -263,11 +238,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$89.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Narodeninová torta</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -279,11 +254,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$39.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Svadobná torta</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -291,11 +266,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$49.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Svadobná torta</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -303,11 +278,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$59.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Svadobná torta</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -315,11 +290,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$69.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Svadobná torta</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -327,11 +302,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$79.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Svadobná torta</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -339,11 +314,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$89.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Svadobná torta</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -355,11 +330,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$39.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Torta na zakázku</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -367,11 +342,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$49.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Torta na zakázku</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -379,11 +354,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$59.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Torta na zakázku</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -391,11 +366,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$69.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Torta na zakázku</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -403,11 +378,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$79.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Torta na zakázku</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -415,11 +390,11 @@
                                 <div class="d-flex h-100">
                                     <div class="flex-shrink-0">
                                         <img class="img-fluid" src="img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
+                                        <h4 class="bg-dark text-primary p-2 m-0">$89.00</h4>
                                     </div>
                                     <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
+                                        <h5 class="text-uppercase">Torta na zakázku</h5>
+                                        <span>Viac informácií po konzultácií</span>
                                     </div>
                                 </div>
                             </div>
@@ -438,28 +413,24 @@
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
                     <div class="bg-primary border-inner text-center text-white p-5">
-                        <h4 class="text-uppercase mb-3">Birthday Cake</h4>
-                        <p>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo amet tempor amet kasd lorem dolor ipsum</p>
-                        <a class="text-uppercase text-dark" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        <h4 class="text-uppercase mb-3">Narodeninová torta</h4>
+                        <p>Viac informácií po konzultácií </p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="bg-primary border-inner text-center text-white p-5">
-                        <h4 class="text-uppercase mb-3">Wedding Cake</h4>
-                        <p>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo amet tempor amet kasd lorem dolor ipsum</p>
-                        <a class="text-uppercase text-dark" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        <h4 class="text-uppercase mb-3">Svadobná torta</h4>
+                        <p>Viac informácií po konzultácií </p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="bg-primary border-inner text-center text-white p-5">
-                        <h4 class="text-uppercase mb-3">Custom Cake</h4>
-                        <p>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo amet tempor amet kasd lorem dolor ipsum</p>
-                        <a class="text-uppercase text-dark" href="">Read More <i class="bi bi-arrow-right"></i></a>
+                        <h4 class="text-uppercase mb-3">Torta na zakázku</h4>
+                        <p>Viac informácií po konzultácií </p>
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-6 text-center">
-                    <h1 class="text-uppercase text-light mb-4">30% Discount For This Summer</h1>
-                    <a href="" class="btn btn-primary border-inner py-3 px-5">Order Now</a>
+                    <h1 class="text-uppercase text-light mb-4">30% Zľava na toto leto!</h1>
                 </div>
             </div>
         </div>
@@ -471,8 +442,8 @@
     <div class="container-fluid py-5">
         <div class="container">
             <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
-                <h2 class="text-primary font-secondary">Team Members</h2>
-                <h1 class="display-4 text-uppercase">Our Master Chefs</h1>
+                <h2 class="text-primary font-secondary">Členovia Tímu</h2>
+                <h1 class="display-4 text-uppercase">Naši kuchári</h1>
             </div>
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
@@ -488,8 +459,8 @@
                             </div>
                         </div>
                         <div class="bg-dark border-inner text-center p-4">
-                            <h4 class="text-uppercase text-primary">Full Name</h4>
-                            <p class="text-white m-0">Designation</p>
+                            <h4 class="text-uppercase text-primary">Adam Ďurík</h4>
+                            <p class="text-white m-0">Hlavný pekár</p>
                         </div>
                     </div>
                 </div>
@@ -506,8 +477,8 @@
                             </div>
                         </div>
                         <div class="bg-dark border-inner text-center p-4">
-                            <h4 class="text-uppercase text-primary">Full Name</h4>
-                            <p class="text-white m-0">Designation</p>
+                            <h4 class="text-uppercase text-primary">Peter Hlava</h4>
+                            <p class="text-white m-0">Odborník na zdobenie</p>
                         </div>
                     </div>
                 </div>
@@ -524,8 +495,8 @@
                             </div>
                         </div>
                         <div class="bg-dark border-inner text-center p-4">
-                            <h4 class="text-uppercase text-primary">Full Name</h4>
-                            <p class="text-white m-0">Designation</p>
+                            <h4 class="text-uppercase text-primary">Andrea Malá</h4>
+                            <p class="text-white m-0">Pomocná pekárka</p>
                         </div>
                     </div>
                 </div>
@@ -542,11 +513,9 @@
                 <div class="col-lg-7 text-center">
                     <div class="section-title position-relative text-center mx-auto mb-4 pb-3" style="max-width: 600px;">
                         <h2 class="text-primary font-secondary">Special Kombo Pack</h2>
-                        <h1 class="display-4 text-uppercase text-white">Super Crispy Cakes</h1>
+                        <h1 class="display-4 text-uppercase text-white">Mix Toho Najlepšieho</h1>
                     </div>
-                    <p class="text-white mb-4">Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et dolore et at sea ea at dolor justo ipsum duo rebum sea. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo lorem. Elitr ut dolores magna sit. Sea dolore sed et.</p>
-                    <a href="" class="btn btn-primary border-inner py-3 px-5 me-3">Shop Now</a>
-                    <a href="" class="btn btn-dark border-inner py-3 px-5">Read More</a>
+                    <p class="text-white mb-4">Nenechajte si újsť ponuku, kde vám vyskladáme krabicu plnú len toho najlepšieho z našej pekárne. Viac info v našej predajni.</p>
                 </div>
             </div>
         </div>
@@ -558,52 +527,48 @@
     <div class="container-fluid py-5">
         <div class="container">
             <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
-                <h2 class="text-primary font-secondary">Testimonial</h2>
-                <h1 class="display-4 text-uppercase">Our Clients Say!!!</h1>
+                <h2 class="text-primary font-secondary">Recenzie</h2>
+                <h1 class="display-4 text-uppercase">Čo hovoria naši zákazníci!!!</h1>
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item bg-dark text-white border-inner p-4">
                     <div class="d-flex align-items-center mb-3">
                         <img class="img-fluid flex-shrink-0" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;">
                         <div class="ps-3">
-                            <h4 class="text-primary text-uppercase mb-1">Client Name</h4>
-                            <span>Profession</span>
+                            <h4 class="text-primary text-uppercase mb-1">Pani Klaudia</h4>
                         </div>
                     </div>
-                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    <p class="mb-0">Zostala som veľmi spokojná. Torty boli veľmi chutné a určite budeme objednávať znovu.
                     </p>
                 </div>
                 <div class="testimonial-item bg-dark text-white border-inner p-4">
                     <div class="d-flex align-items-center mb-3">
                         <img class="img-fluid flex-shrink-0" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;">
                         <div class="ps-3">
-                            <h4 class="text-primary text-uppercase mb-1">Client Name</h4>
-                            <span>Profession</span>
+                            <h4 class="text-primary text-uppercase mb-1">Pán Peter</h4>
                         </div>
                     </div>
-                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    <p class="mb-0">Torta bola neskutočne jemná a čerstvá. Cítiť, že je robená poctivo ako od babky.
                     </p>
                 </div>
                 <div class="testimonial-item bg-dark text-white border-inner p-4">
                     <div class="d-flex align-items-center mb-3">
                         <img class="img-fluid flex-shrink-0" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;">
                         <div class="ps-3">
-                            <h4 class="text-primary text-uppercase mb-1">Client Name</h4>
-                            <span>Profession</span>
+                            <h4 class="text-primary text-uppercase mb-1">Pán Adam</h4>
                         </div>
                     </div>
-                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    <p class="mb-0">Už dlho som si tak nepochutnal. Chuť bola vyvážená a nie príliš sladká – ideálne!
                     </p>
                 </div>
                 <div class="testimonial-item bg-dark text-white border-inner p-4">
                     <div class="d-flex align-items-center mb-3">
                         <img class="img-fluid flex-shrink-0" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;">
                         <div class="ps-3">
-                            <h4 class="text-primary text-uppercase mb-1">Client Name</h4>
-                            <span>Profession</span>
+                            <h4 class="text-primary text-uppercase mb-1">Pani Katarína</h4>
                         </div>
                     </div>
-                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                    <p class="mb-0">Jedna z najlepších tort, aké som kedy mala. Krém bol ľahučký ako obláčik!
                     </p>
                 </div>
             </div>

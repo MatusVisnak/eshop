@@ -59,8 +59,8 @@
     <div class="container-fluid pt-5">
         <div class="container">
             <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
-                <h2 class="text-primary font-secondary">About Us</h2>
-                <h1 class="display-4 text-uppercase">Welcome To CakeZone</h1>
+                <h2 class="text-primary font-secondary">O nás</h2>
+                <h1 class="display-4 text-uppercase">Vitajte v MAVI</h1>
             </div>
             <div class="row gx-5">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
@@ -69,22 +69,22 @@
                     </div>
                 </div>
                 <div class="col-lg-6 pb-5">
-                    <h4 class="mb-4">Tempor erat elitr rebum clita. Diam dolor diam ipsum erat lorem sed stet labore lorem sit clita duo</h4>
-                    <p class="mb-5">Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et tempor sit. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet magna</p>
+                    <h4 class="mb-4">V našej cukrárni pečieme srdcom – každý kúsok je poctivo pripravený s láskou a tradíciou</h4>
+                    <p class="mb-5">Naše zákusky a torty sú výsledkom dlhoročného remesla, kvalitných surovín a vášne pre sladké umenie. Každý dezert prechádza rukami skúsených cukrárov, ktorí dbajú na chuť, vzhľad aj vôňu. U nás nájdete chuť domova v každom súste.</p>
                     <div class="row g-5">
                         <div class="col-sm-6">
                             <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4" style="width: 90px; height: 90px;">
                                 <i class="fa fa-heartbeat fa-2x text-white"></i>
                             </div>
                             <h4 class="text-uppercase">100% Healthy</h4>
-                            <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+                            <p class="mb-0">Naše torty a zákusky sú tvorené len z tých najlepších a najkvalitnejších surovín zo Slovenska</p>
                         </div>
                         <div class="col-sm-6">
                             <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4" style="width: 90px; height: 90px;">
                                 <i class="fa fa-award fa-2x text-white"></i>
                             </div>
                             <h4 class="text-uppercase">Award Winning</h4>
-                            <p class="mb-0">Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+                            <p class="mb-0">Počas posledných rokov zažila naša cukráreň mnoho úspechov a vyhrali sme nejednu cenu</p>
                         </div>
                     </div>
                 </div>
@@ -104,8 +104,8 @@
                             <i class="fa fa-star text-white"></i>
                         </div>
                         <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Our Experience</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                            <h6 class="text-primary text-uppercase">Skúsenosti</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">1672</h1>
                         </div>
                     </div>
                 </div>
@@ -115,8 +115,8 @@
                             <i class="fa fa-users text-white"></i>
                         </div>
                         <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Cake Specialist</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                            <h6 class="text-primary text-uppercase">Pekári</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12</h1>
                         </div>
                     </div>
                 </div>
@@ -126,8 +126,8 @@
                             <i class="fa fa-check text-white"></i>
                         </div>
                         <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Complete Project</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                            <h6 class="text-primary text-uppercase">Hotové projekty</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">1021</h1>
                         </div>
                     </div>
                 </div>
@@ -137,8 +137,8 @@
                             <i class="fa fa-mug-hot text-white"></i>
                         </div>
                         <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Happy Clients</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
+                            <h6 class="text-primary text-uppercase">Šťastný klienti</h6>
+                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">978</h1>
                         </div>
                     </div>
                 </div>

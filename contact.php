@@ -46,9 +46,9 @@
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class="display-4 text-uppercase text-white">Kontaktujte Nás</h1>
-                <a href="">Home</a>
+                <a href="">Domov</a>
                 <i class="far fa-square text-primary px-2"></i>
-                <a href="">Contact</a>
+                <a href="">Kontaktujte Nás</a>
             </div>
         </div>
     </div>

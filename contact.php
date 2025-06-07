@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CakeZone - Cake Shop Website Template</title>
+    <title>Cukráreň MAVI - to najlepšie pre Vás</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -45,7 +45,7 @@
     <div class="container-fluid bg-dark bg-img p-5 mb-5">
         <div class="row">
             <div class="col-12 text-center">
-                <h1 class="display-4 text-uppercase text-white">Contact Us</h1>
+                <h1 class="display-4 text-uppercase text-white">Kontaktujte Nás</h1>
                 <a href="">Home</a>
                 <i class="far fa-square text-primary px-2"></i>
                 <a href="">Contact</a>

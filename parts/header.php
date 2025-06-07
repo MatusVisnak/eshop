@@ -41,7 +41,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto mx-lg-auto py-0">
-                <a href="index.php" class="nav-item nav-link active">Home</a>
+                <a href="index.php" class="nav-item nav-link active">Domov</a>
                 <a href="about.php" class="nav-item nav-link">O nás</a>
                 <a href="menu.php" class="nav-item nav-link">Menu a ceny</a>
                 <a href="team.php" class="nav-item nav-link">pekári</a>

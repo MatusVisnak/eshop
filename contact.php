@@ -1,3 +1,46 @@
+<?php
+// Pripojenie k databáze
+$servername = "localhost";  // zmeň podľa svojho nastavenia
+$username = "root";         // zmeň podľa svojho nastavenia
+$password = "";             // zmeň podľa svojho nastavenia
+$dbname = "cukrarenmavi";
+
+// Vytvorenie pripojenia
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Kontrola pripojenia
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Premenná pre hlásenie
+$message = "";
+
+// Spracovanie formulára po odoslaní
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
+    // Bezpečné získanie dát
+    $meno = $conn->real_escape_string($_POST['meno']);
+    $email = $conn->real_escape_string($_POST['email']);
+    $predmet = $conn->real_escape_string($_POST['predmet']);
+    $sprava = $conn->real_escape_string($_POST['sprava']);
+
+    // Overenie povinných polí
+    if (!empty($meno) && !empty($email) && !empty($predmet) && !empty($sprava)) {
+        $sql = "INSERT INTO kontakty (meno, email, predmet, sprava) VALUES ('$meno', '$email', '$predmet', '$sprava')";
+
+        if ($conn->query($sql) === TRUE) {
+            $message = "<div class='alert alert-success'>Vaša správa bola odoslaná. Ďakujeme!</div>";
+        } else {
+            $message = "<div class='alert alert-danger'>Chyba pri odosielaní správy: " . $conn->error . "</div>";
+        }
+    } else {
+        $message = "<div class='alert alert-warning'>Prosím, vyplňte všetky povinné polia.</div>";
+    }
+}
+
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,9 +97,16 @@
     </div>
     <!-- Page Header End -->
 
+    <div class="container mt-3">
+        <?php
+            if (!empty($message)) {
+                echo $message;
+            }
+        ?>
+    </div>
 
     <!-- Contact Start -->
-    <div class="container-fluid contact position-relative px-5" style="margin-top: 90px;">
+    <div class="container-fluid contact position-relative px-5" style="margin-top: 30px;">
         <div class="container">
             <div class="row g-5 mb-5">
                 <div class="col-lg-4 col-md-6">
@@ -83,22 +133,22 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <form>
+                    <form method="POST" action="contact.php">
                         <div class="row g-3">
                             <div class="col-sm-6">
-                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="Meno" style="height: 55px;">
+                                <input type="text" name="meno" class="form-control bg-light border-0 px-4" placeholder="Meno" style="height: 55px;" required>
                             </div>
                             <div class="col-sm-6">
-                                <input type="email" class="form-control bg-light border-0 px-4" placeholder="Email" style="height: 55px;">
+                                <input type="email" name="email" class="form-control bg-light border-0 px-4" placeholder="Email" style="height: 55px;" required>
                             </div>
                             <div class="col-sm-12">
-                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="Predmet" style="height: 55px;">
+                                <input type="text" name="predmet" class="form-control bg-light border-0 px-4" placeholder="Predmet" style="height: 55px;" required>
                             </div>
                             <div class="col-sm-12">
-                                <textarea class="form-control bg-light border-0 px-4 py-3" rows="4" placeholder="Vaša Správa"></textarea>
+                                <textarea name="sprava" class="form-control bg-light border-0 px-4 py-3" rows="4" placeholder="Vaša Správa" required></textarea>
                             </div>
                             <div class="col-sm-12">
-                                <button class="btn btn-primary border-inner w-100 py-3" type="submit">Odoslať</button>
+                                <button class="btn btn-primary border-inner w-100 py-3" type="submit" name="submit">Odoslať</button>
                             </div>
                         </div>
                     </form>

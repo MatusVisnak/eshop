@@ -27,7 +27,9 @@
                 <span class="nav-item nav-link text-white">
                     <i class="bi bi-person-fill"></i> <?= htmlspecialchars($_SESSION['username']) ?>
                 </span>
+                <a href="produkty.php" class="nav-item nav-link">Produkty</a>           
                 <a href="logout.php" class="nav-item nav-link">Odhlásiť sa</a>
+
             <?php else: ?>
                 <a href="login.php" class="nav-item nav-link">Prihlásenie</a>
             <?php endif; ?>

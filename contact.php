@@ -1,30 +1,23 @@
 <?php
-// Pripojenie k databáze
-$servername = "localhost";  // zmeň podľa svojho nastavenia
-$username = "root";         // zmeň podľa svojho nastavenia
-$password = "";             // zmeň podľa svojho nastavenia
+$servername = "localhost";  
+$username = "root";         
+$password = "";             
 $dbname = "cukrarenmavi";
 
-// Vytvorenie pripojenia
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Kontrola pripojenia
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Premenná pre hlásenie
 $message = "";
 
-// Spracovanie formulára po odoslaní
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
-    // Bezpečné získanie dát
     $meno = $conn->real_escape_string($_POST['meno']);
     $email = $conn->real_escape_string($_POST['email']);
     $predmet = $conn->real_escape_string($_POST['predmet']);
     $sprava = $conn->real_escape_string($_POST['sprava']);
 
-    // Overenie povinných polí
     if (!empty($meno) && !empty($email) && !empty($predmet) && !empty($sprava)) {
         $sql = "INSERT INTO kontakty (meno, email, predmet, sprava) VALUES ('$meno', '$email', '$predmet', '$sprava')";
 

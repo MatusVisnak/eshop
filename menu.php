@@ -1,10 +1,7 @@
 <?php
 require "config.php";
 
-if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
-    exit;
-}
+
 
 ?>
 
@@ -328,11 +325,9 @@ if (!isset($_SESSION['user_id'])) {
                 <div class="col-lg-7 text-center">
                     <div class="section-title position-relative text-center mx-auto mb-4 pb-3" style="max-width: 600px;">
                         <h2 class="text-primary font-secondary">Special Kombo Pack</h2>
-                        <h1 class="display-4 text-uppercase text-white">Super Crispy Cakes</h1>
+                        <h1 class="display-4 text-uppercase text-white">Mix Toho Najlepšieho</h1>
                     </div>
-                    <p class="text-white mb-4">Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et dolore et at sea ea at dolor justo ipsum duo rebum sea. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo lorem. Elitr ut dolores magna sit. Sea dolore sed et.</p>
-                    <a href="" class="btn btn-primary border-inner py-3 px-5 me-3">Shop Now</a>
-                    <a href="" class="btn btn-dark border-inner py-3 px-5">Read More</a>
+                    <p class="text-white mb-4">Nenechajte si újsť ponuku, kde vám vyskladáme krabicu plnú len toho najlepšieho z našej cukrárne. Viac info v našej predajni.</p>
                 </div>
             </div>
         </div>

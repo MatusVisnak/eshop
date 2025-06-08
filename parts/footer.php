@@ -27,16 +27,7 @@
                             </div>
                             
                         </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <h4 class="text-primary text-uppercase mb-4">Odkazy</h4>
-                            <div class="d-flex flex-column justify-content-start">
-                                <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Domov</a>
-                                <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>O nás</a>
-                                <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Naše služby</a>
-                                <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Náš team</a>
-                                <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Kontaktujte nás</a>
-                            </div>
-                        </div>                       
+                                              
                     </div>
                 </div>
             </div>

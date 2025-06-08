@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <h1 class="display-4 text-uppercase text-white">Prihlásenie</h1>
                 <a href="index.php">Domov</a>
                 <i class="far fa-square text-primary px-2"></i>
-                <a href="#">Login</a>
+                <a href="#">Prihlásenie</a>
             </div>
         </div>
     </div>
@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <div class="alert alert-danger"><?= htmlspecialchars($error) ?></div>
                 <?php endif; ?>
                 <div class="bg-light p-4 rounded shadow">
-                    <h4 class="mb-4 text-center">Prihláste sa do systému</h4>
+                    <h4 class="mb-4 text-center">Prihlásenie pre zamestnancov MAVI</h4>
                     <form method="POST" action="login.php">
                         <div class="form-group mb-3">
                             <label for="username">Používateľ</label>

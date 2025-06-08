@@ -21,7 +21,6 @@
                     <a href="testimonial.php" class="dropdown-item">Recenzie</a>
                 </div>
             </div>
-            <a href="contact.php" class="nav-item nav-link">Kontaktujte nás</a>
 
             <?php if (isset($_SESSION['user_id'])): ?>
                 <span class="nav-item nav-link text-white">
@@ -31,6 +30,7 @@
                 <a href="logout.php" class="nav-item nav-link">Odhlásiť sa</a>
 
             <?php else: ?>
+                <a href="contact.php" class="nav-item nav-link">Kontaktujte nás</a>
                 <a href="login.php" class="nav-item nav-link">Prihlásenie</a>
             <?php endif; ?>
         </div>

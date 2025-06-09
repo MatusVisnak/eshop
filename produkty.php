@@ -1,53 +1,33 @@
+
 <?php
-require "config.php";
+require "config.php";      // tu máš $conn a session_start()
+require "classes/Produkty.php";
 
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
     exit;
 }
 
+$produkty = new Produkty($conn);
 $message = "";
 
-// Pridanie
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add'])) {
-    $nazov = $conn->real_escape_string($_POST['produkt_nazov']);
-    $pocet = (int)$_POST['pocet'];
-
-    if ($nazov && $pocet >= 0) {
-        $sql = "INSERT INTO produkty (produkt_nazov, pocet) VALUES ('$nazov', $pocet)";
-        $message = $conn->query($sql)
-            ? "<div class='alert alert-success'>Produkt pridaný.</div>"
-            : "<div class='alert alert-danger'>Chyba pri pridávaní.</div>";
-    } else {
-        $message = "<div class='alert alert-danger'>Vyplňte názov a počet ≥ 0.</div>";
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (isset($_POST['add'])) {
+        $produkty->pridaj($_POST['produkt_nazov'], (int)$_POST['pocet']);
+        $message = $produkty->message;
+    } elseif (isset($_POST['update'])) {
+        $produkty->uprav((int)$_POST['id'], $_POST['produkt_nazov'], (int)$_POST['pocet']);
+        $message = $produkty->message;
     }
 }
 
-// Odstránenie
 if (isset($_GET['delete'])) {
-    $id = (int)$_GET['delete'];
-    $conn->query("DELETE FROM produkty WHERE id=$id");
+    $produkty->vymaz((int)$_GET['delete']);
     header("Location: produkty.php");
     exit;
 }
 
-// Úprava
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['update'])) {
-    $id = (int)$_POST['id'];
-    $nazov = $conn->real_escape_string($_POST['produkt_nazov']);
-    $pocet = (int)$_POST['pocet'];
-
-    if ($nazov && $pocet >= 0) {
-        $sql = "UPDATE produkty SET produkt_nazov='$nazov', pocet=$pocet WHERE id=$id";
-        $message = $conn->query($sql)
-            ? "<div class='alert alert-success'>Produkt upravený.</div>"
-            : "<div class='alert alert-danger'>Chyba pri úprave.</div>";
-    } else {
-        $message = "<div class='alert alert-danger'>Vyplňte názov a počet ≥ 0.</div>";
-    }
-}
-
-$result = $conn->query("SELECT * FROM produkty ORDER BY id DESC");
+$result = $produkty->zobrazVsetky();
 ?>
 
 <!DOCTYPE html>
@@ -57,6 +37,7 @@ $result = $conn->query("SELECT * FROM produkty ORDER BY id DESC");
     <title>Produkty | Cukráreň MAVI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- všetky tvoje linky a CSS -->
     <link href="img/favicon.ico" rel="icon">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -68,7 +49,6 @@ $result = $conn->query("SELECT * FROM produkty ORDER BY id DESC");
 <body>
     <?php include "parts/header.php"; ?>
 
-    <!-- Page Header -->
     <div class="container-fluid bg-dark bg-img p-5 mb-5">
         <div class="row">
             <div class="col-12 text-center">
@@ -81,14 +61,12 @@ $result = $conn->query("SELECT * FROM produkty ORDER BY id DESC");
     </div>
 
     <div class="container mb-5">
-        <!-- Hlavička a odhlásenie -->
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h3 class="text-uppercase">Zoznam produktov</h3>
         </div>
 
         <?= $message ?>
 
-        <!-- Formulár -->
         <div class="mb-4" style="max-width: 500px;">
             <form method="POST">
                 <h5 class="mb-3">Pridať produkt</h5>
@@ -98,7 +76,6 @@ $result = $conn->query("SELECT * FROM produkty ORDER BY id DESC");
             </form>
         </div>
 
-        <!-- Tabuľka -->
         <div class="table-responsive" style="max-width: 800px;">
             <table class="table table-bordered">
                 <thead class="table-dark">
@@ -135,7 +112,6 @@ $result = $conn->query("SELECT * FROM produkty ORDER BY id DESC");
 
     <a href="#" class="btn btn-primary border-inner py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- Skripty -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>

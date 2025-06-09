@@ -1,42 +1,35 @@
 <?php
+require_once "classes/Database.php";
+require_once "classes/User.php";
 
+$db = new Database();
+$conn = $db->getConnection();
+$user = new User($conn);
 
 $message = "";
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $key = trim($_POST['key'] ?? '');
-    $username = $conn->real_escape_string(trim($_POST['username']));
-    $password = $_POST['password'] ?? '';
-    $password_confirm = $_POST['password_confirm'] ?? '';
+    $username = trim($_POST['username']);
+    $password = $_POST['password'];
+    $password_confirm = $_POST['password_confirm'];
 
-    // Overenie registračného kľúča
     if ($key !== 'mavicukraren2025') {
-        $message = "Nesprávny registračný kľúč.";
-    }
-    elseif (empty($username) || empty($password)) {
+        $message = "Neplatný registračný kľúč.";
+    } elseif (empty($username) || empty($password)) {
         $message = "Vyplňte všetky polia.";
-    }
-    elseif ($password !== $password_confirm) {
+    } elseif ($password !== $password_confirm) {
         $message = "Heslá sa nezhodujú.";
-    }
-    else {
-        // Overenie, či užívateľ existuje
-        $sql_check = "SELECT id FROM users WHERE username='$username' LIMIT 1";
-        $result = $conn->query($sql_check);
-        if ($result->num_rows > 0) {
-            $message = "Používateľ už existuje.";
+    } elseif ($user->exists($username)) {
+        $message = "Používateľ už existuje.";
+    } else {
+        if ($user->register($username, $password)) {
+            $_SESSION['user_id'] = $conn->insert_id;
+            $_SESSION['username'] = $username;
+            header("Location: produkty.php");
+            exit;
         } else {
-            // Vloženie nového používateľa s hashovaným heslom
-            $hash = password_hash($password, PASSWORD_DEFAULT);
-            $sql_insert = "INSERT INTO users (username, password) VALUES ('$username', '$hash')";
-            if ($conn->query($sql_insert) === TRUE) {
-                $_SESSION['user_id'] = $conn->insert_id;
-                $_SESSION['username'] = $username;
-                header("Location: produkty.php");
-                exit;
-            } else {
-                $message = "Chyba pri registrácii: " . $conn->error;
-            }
+            $message = "Chyba pri registrácii.";
         }
     }
 }

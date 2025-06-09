@@ -1,37 +1,26 @@
 <?php
-$servername = "localhost";  
-$username = "root";         
-$password = "";             
-$dbname = "cukrarenmavi";
+require_once "classes/Database.php";
+require_once "classes/ContactMessage.php";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
+$db = new Database();
+$conn = $db->getConnection();
 $message = "";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
-    $meno = $conn->real_escape_string($_POST['meno']);
-    $email = $conn->real_escape_string($_POST['email']);
-    $predmet = $conn->real_escape_string($_POST['predmet']);
-    $sprava = $conn->real_escape_string($_POST['sprava']);
+if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['submit'])) {
+    $contact = ContactMessage::fromPost($conn, $_POST);
 
-    if (!empty($meno) && !empty($email) && !empty($predmet) && !empty($sprava)) {
-        $sql = "INSERT INTO kontakty (meno, email, predmet, sprava) VALUES ('$meno', '$email', '$predmet', '$sprava')";
-
-        if ($conn->query($sql) === TRUE) {
-            $message = "<div class='alert alert-success'>Vaša správa bola odoslaná. Ďakujeme!</div>";
+    if ($contact->isValid()) {
+        if ($contact->save()) {
+            $message = "<div class='alert alert-success'>Správa bola odoslaná.</div>";
         } else {
-            $message = "<div class='alert alert-danger'>Chyba pri odosielaní správy: " . $conn->error . "</div>";
+            $message = "<div class='alert alert-danger'>Chyba pri odoslaní.</div>";
         }
     } else {
-        $message = "<div class='alert alert-warning'>Prosím, vyplňte všetky povinné polia.</div>";
+        $message = "<div class='alert alert-warning'>Vyplňte všetky polia.</div>";
     }
 }
 
-$conn->close();
+$db->close();
 ?>
 
 <!DOCTYPE html>

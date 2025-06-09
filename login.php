@@ -1,5 +1,10 @@
 <?php
-require "config.php";
+require_once "classes/Database.php";
+require_once "classes/User.php";
+
+$db = new Database();
+$conn = $db->getConnection();
+$user = new User($conn);
 
 if (isset($_SESSION['user_id'])) {
     header("Location: produkty.php");
@@ -8,28 +13,16 @@ if (isset($_SESSION['user_id'])) {
 
 $error = "";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $conn->real_escape_string($_POST['username']);
-    $password = $_POST['password'];
-
-    $sql = "SELECT * FROM users WHERE username='$username' LIMIT 1";
-    $result = $conn->query($sql);
-
-    if ($result && $result->num_rows === 1) {
-        $user = $result->fetch_assoc();
-        if (password_verify($password, $user['password'])) {
-            $_SESSION['user_id'] = $user['id'];
-            $_SESSION['username'] = $user['username'];
-            header("Location: produkty.php");
-            exit;
-        } else {
-            $error = "Nesprávne heslo.";
-        }
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    if ($user->login($_POST['username'], $_POST['password'])) {
+        header("Location: produkty.php");
+        exit;
     } else {
-        $error = "Používateľ neexistuje.";
+        $error = "Nesprávne prihlasovacie údaje.";
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="sk">

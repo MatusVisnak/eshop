@@ -31,7 +31,15 @@
 
             <?php else: ?>
                 <a href="contact.php" class="nav-item nav-link">Kontaktujte nás</a>
-                <a href="login.php" class="nav-item nav-link">Prihlásenie</a>
+                
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Zamestnanci</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="login.php" class="dropdown-item">Prihlásenie</a>
+                        <a href="register.php" class="dropdown-item">Registrácia</a>
+                    </div>
+                </div>
+                
             <?php endif; ?>
         </div>
     </div>

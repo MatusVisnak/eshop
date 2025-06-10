@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <html lang="sk">
 <head>
     <meta charset="utf-8">
-    <title>Prihlásenie | Cukráreň MAVI</title>
+    <title>Cukráreň MAVI - to najlepšie pre Vás</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="img/favicon.ico" rel="icon">

@@ -95,7 +95,7 @@ $db->close();
                     <div class="bg-primary border-inner text-center text-white p-5">
                         <i class="bi bi-geo-alt fs-1 text-white"></i>
                         <h6 class="text-uppercase my-2">Naša Adresa</h6>
-                        <span>Mládeže 3, 953 01 Zlaté Moravce</span>
+                        <span>Mládeže 3, 953 01 Zlaté Moravce <br><br></span>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">

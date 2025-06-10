@@ -12,7 +12,8 @@
         <div class="navbar-nav ms-auto mx-lg-auto py-0">
             <a href="index.php" class="nav-item nav-link active">Domov</a>
             <a href="about.php" class="nav-item nav-link">O nás</a>
-            <a href="menu.php" class="nav-item nav-link">Menu a ceny</a>
+            <a href="menu.php" class="nav-item nav-link">objednávky</a>
+            <a href="zakusky.php" class="nav-item nav-link">Ponuka</a>
             <a href="team.php" class="nav-item nav-link">Pekári</a>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Stránky</a>

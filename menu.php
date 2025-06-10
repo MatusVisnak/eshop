@@ -53,10 +53,10 @@ require "config.php";
     <div class="container-fluid bg-dark bg-img p-5 mb-5">
         <div class="row">
             <div class="col-12 text-center">
-                <h1 class="display-4 text-uppercase text-white">Menu a Ceny</h1>
+                <h1 class="display-4 text-uppercase text-white">Produkty na objednávku</h1>
                 <a href="">Domov</a>
                 <i class="far fa-square text-primary px-2"></i>
-                <a href="">Menu a Ceny</a>
+                <a href="">objednávky</a>
             </div>
         </div>
     </div>

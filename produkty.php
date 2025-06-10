@@ -34,7 +34,7 @@ $result = $produkty->zobrazVsetky();
 <html lang="sk">
 <head>
     <meta charset="utf-8">
-    <title>Produkty | Cukráreň MAVI</title>
+    <title>Cukráreň MAVI - to najlepšie pre Vás</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- všetky tvoje linky a CSS -->
